@@ -244,27 +244,71 @@ input[type=submit] {
 
 /* For Desktop: */
 
-@media only screen and(max-width: 980px){
-    body{
-        width: 100%;
-    }
-}
+@media only screen and(max-width: 980px) {}
 
 /* For Table: */
 
 @media only screen and (max-width: 768px) {
-    header, body{
-       width: 100%; 
+    .sidebar {
+        background: #fff;
+        padding: 30px;
+        width: 100%;
+        max-width: 650px;
+        float: left;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    nav {
+        float: left;
     }
 }
+
 /* For Phone in Landscape */
 
 @media only screen and (max-width: 640px) {
-    header, body{
-       width:100%; 
+    .container {
+        max-width: 600px;
     }
-    
-    header{
-        position: static;
+    #masthead {
+        max-width: 600px;
+    }
+    .main-section {
+        max-width: 600px;
+    }
+    .sidebar {
+        background: #fff;
+        padding: 30px;
+        width: 100%;
+        max-width: 600px;
+        float: left;
+        border: 1px solid #ddd;
+        margin-bottom: 20px;
+    }
+    #logo {
+        width: 600px;
+        height: 90px;
+        background: #4aaaa5;
+        float: left;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        text-align: center;
+        line-height: 90px;
+        color: #fff;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    nav {
+        float: left;
+        margin-top: 25px;
+        max-width: 600px;
+    }
+    nav a {
+        color: #999;
+        text-decoration: none;
+        margin-left: 75px;
+        display: inline-block;
+        border-left: 1px solid #efefef;
+        padding-left: 15px;
+        line-height: 18px;
+        max-width: 600px;
     }
 }
